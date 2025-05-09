@@ -6,6 +6,7 @@ A simple and intuitive student management system built using **React**, featurin
 🖼️ Screenshots
 ![Demo App](/public/home.png)
 
+---
 
 ## 🚀 Features
 

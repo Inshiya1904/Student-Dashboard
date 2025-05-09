@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* Header */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10b981;
+  padding: 20px 6%;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.Header h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: white
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.add-stud,
+.login-btn {
+  margin-left: 20px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-stud:hover,
+.login-btn:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.logout-btn {
+  margin-left: 20px;
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+.dashboard{
+padding: 25px 10%;
+
+}
+.dashboard h1{
+ text-align: center;
+ margin: 20px 0;
+}
+/* filterbar Bar */
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #eef1f5;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filterBar label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.filterBar select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-bar button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+/*student-list container */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.student-table thead {
+  background-color: #f4f4f4;
+}
+
+.view-btn,
+.delete-btn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+  color: #ffffff;
+  border-color: #0056b3;
+  font-weight: bold;
+}
+
+/*login-form container */
+.login-form {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.login-form-btn {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Add-student container */
+.Add-student {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Add-student h1 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 30px;
+}
+.add-student-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-student-form input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-student-form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.add-student-form span {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+}
+
+.add-stud-btn {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-stud-btn:hover {
+  background-color: #0056b3;;
+}
+/* Student Detail container */
+.stud-detail-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stud-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.stud-details p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #555;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.edit-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.edit-form button {
+  padding: 10px 16px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.edit-form button:last-of-type {
+  background-color: #dc3545;
+}
+
+.edit-form button:hover {
+  opacity: 0.9;
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btns button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.btns button:last-child {
+  background-color: #007bff;
+}
+
+.btns a {
+  color: white;
+  text-decoration: none;
+}
+
+.btns button:hover {
+  opacity: 0.9;
+}

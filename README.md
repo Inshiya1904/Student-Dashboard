@@ -51,6 +51,14 @@ A simple and intuitive student management system built using **React**, featurin
    npm run dev
    ```
 
+
+🔧 Mock API Setup
+The app uses axios-mock-adapter to simulate backend requests. You can find this setup in:
+ ```shell
+   src/api/mock.js
+   ```
+
+
 ---
 
 

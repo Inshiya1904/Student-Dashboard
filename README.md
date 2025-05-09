@@ -46,6 +46,10 @@ A simple and intuitive student management system built using **React**, featurin
    npm install
    ```
 
+3. Start the development server
+   ```shell
+   npm run dev
+   ```
 
 ---
 

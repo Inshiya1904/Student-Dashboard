@@ -32,7 +32,22 @@ A simple and intuitive student management system built using **React**, featurin
 ---
 
 
+## 📦 Installation
 
+1. **Clone the repository**
+   ```shell
+   git clone https://github.com/Inshiya1904/Student-Dashboard.git
+   cd student-dashboard
+   ```
+   
+
+2. Install dependencies
+   ```shell
+   npm install
+   ```
+
+
+---
 
 
 

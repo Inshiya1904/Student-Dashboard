@@ -3,6 +3,9 @@
 A simple and intuitive student management system built using **React**, featuring add, view, edit, delete, search, filter, and pagination functionalities with mock API integration.
 
 ---
+🖼️ Screenshots
+![Demo App](/public/home.png)
+
 
 ## 🚀 Features
 

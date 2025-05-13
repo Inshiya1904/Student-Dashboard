@@ -67,7 +67,7 @@ const filtered = students
   <thead>
     <tr>
       <th>Name</th>
-      <th>Email</th>
+      <th>Email</th>  
       <th>Course</th>
       <th>Actions</th>
     </tr>

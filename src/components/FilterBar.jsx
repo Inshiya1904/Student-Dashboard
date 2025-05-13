@@ -5,6 +5,8 @@ const FilterBar = ({ filter, setFilter }) => (
         <option value="">All Courses</option>
         <option value="React">React</option>
         <option value="Node.js">Node.js</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Java">Java</option>
       </select>
     </div>
   );
